@@ -8,7 +8,35 @@
     <title>Converter App</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" class="container py-5">
+      <h1 class="text-center mb-4">Temperature Conveter</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="converterForm">
+            <!-- Input for numbers --> 
+            <div class="mb-3">
+              <label for="tempValue" class="form-label">Value</label>
+              <input type="number" class="form-control" id = "tempValue" 
+              placeholder = "Enter temperature here: ">
+            </div>
+            <div class="mb-3">
+              <label for="tempType" class = "form-label">From</label>
+              <select id="tempType" class = "form-select">
+                <option value="c2f">Celsius to Farenhite</option>
+                <option value="f2c">Farenhite to Celsius</option>
+              </select>
+            </div>
+            <div class="mt-3">
+              <button type="submit" class="btn btn-primary w-100">Convert</button>
+            </div>
+
+          </form>
+          <div class ="mt-5"></div>
+          <h1 id="result" class ="text-center text-success"> -40 F</h1>
+        </div>
+
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
