@@ -24,18 +24,18 @@ describe('celsiusToFarenhite tests', () => {
 describe('farenhiteToCelsius tests', () => {
     // 0F should be -17.77777777777778C
     it('should convert 0F into -17.77777777777778C', () => {
-        expect(farenhiteToCelsius(0).toBe(-17.77777777777778))
+        expect(farenhiteToCelsius(0)).toBe(-17.77777777777778)
     })
     // 100F should be 37.77777777777778C
     it('should convert 100F into 37.77777777777778C', () => {
-        expect(farenhiteToCelsius(100).toBe(37.77777777777778))
+        expect(farenhiteToCelsius(100)).toBe(37.77777777777778)
     })
     // 212F should be 100C
     it('should convert 212F into 100C', () => {
-        expect(farenhiteToCelsius(212).toBe(100))
+        expect(farenhiteToCelsius(212)).toBe(100)
     })
     // -100F should be -73.33333333333333C
     it('should convert -100F into -73.33333333333333C', () => {
-        expect(farenhiteToCelsius(-100).toBe(-73.33333333333333))
+        expect(farenhiteToCelsius(-100)).toBe(-73.33333333333333)
     })
 })
